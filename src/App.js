@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Example from './Header';
+import Main from './Main';
+import Otzuvy from './Otzuvy';
+import Form from './Form';
+import FormNum from './Formnum';
+import Comment from './Comment';
+import SortResults from './Comment';
+import Valid from "./Valid.jsx";
+import Button from "./Button.jsx";
+import BtnScrollUp from './Button.jsx';
+import Footer from './Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <Example />
+    <Main />
+    <Otzuvy />
+   <Form seconds={1195} />
+   <FormNum />
+<SortResults />
+<Valid />
+
+
+<Footer />
+<BtnScrollUp />
     </div>
   );
 }
