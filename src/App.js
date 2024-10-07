@@ -1,5 +1,5 @@
-
 import './App.css';
+import React, {useState} from "react";
 import Example from './Header';
 import Main from './Main';
 import Otzuvy from './Otzuvy';
@@ -11,22 +11,38 @@ import Valid from "./Valid.jsx";
 import Button from "./Button.jsx";
 import BtnScrollUp from './Button.jsx';
 import Footer from './Footer';
+import Theme from "./theme";
+import { MdOutlineNightsStay } from "react-icons/md";
+
 function App() {
-  return (
-    <div className='App'>
-    <Example />
-    <Main />
-    <Otzuvy />
-   <Form seconds={1195} />
-   <FormNum />
-<SortResults />
-<Valid />
+  const [theme, setTheme] = useState('light');
+  const toogleTheme = () => {
+  setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+  
+return (
+  <div className='App'>
+  <div className={`app ${theme}`}>
+    <MdOutlineNightsStay 
+      className="
+        text-yellow-500
+        mt-10 
+        mr-12 
+        absolute"
+          onClick={toogleTheme} />
 
-
-<Footer />
-<BtnScrollUp />
-    </div>
-  );
-}
+      <Example />
+      <Main />
+      <Otzuvy />
+      <Form seconds={1195} />
+      <FormNum />
+      <SortResults />
+      <Valid />
+      <Footer />
+      <BtnScrollUp />
+</div>
+</div>
+);
+};
 
 export default App;

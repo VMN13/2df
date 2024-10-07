@@ -6,8 +6,6 @@ body, html {
   text-align: center;
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -37,3 +35,18 @@ body, html {
     transform: rotate(360deg);
   }
 }
+
+.app {
+  text-align: center;
+  transition: background-color 0.5s, color 0.5s;
+  }
+
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+  }
+
+  .app.dark {
+    background-color: #000000;
+    color: #ffffff;
+    }

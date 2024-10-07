@@ -16,17 +16,15 @@ class SortResults extends React.Component {
 
    this.createResultToRender = this.createResultToRender.bind(this);
    this.handleSortChange = this.handleSortChange.bind(this);
-
   }
-   
-
+  
   sortBasedOnKey (array, property) {
     return array.sort(function (o1, o2) {
       let x = o1[property];
       let y = o2[property];
-      return ((x < y) ? -1 : ((x > y) ? 1 : 0))
-    })
-  }
+     return ((x < y) ? -1 : ((x > y) ? 1 : 0))
+    });
+  };
 
   handleSortChange = (e) => {
     if (e.target.value !== "null") {
@@ -35,36 +33,72 @@ class SortResults extends React.Component {
         sortField: e.target.value,
         data: sortedData
       });
-    }
-  }
+    };
+  };
 
   createResultToRender() {
     let result = [];
     this.state.data.map((item) => {
       result.push(
         <div className="sort=card">
-          <div className="flex"><img className="rounded-full h-24 w-10" src={Image}></img><FaRegArrowAltCircleUp className="" /><FaRegArrowAltCircleUp className="" />{item['text']}</div>
-
+          <div className="flex">
+          <img className="
+            rounded-full
+            h-24
+            w-10"
+           src={Image}>
+          </img>
+          <FaRegArrowAltCircleUp className="" />
+          <FaRegArrowAltCircleUp className="" />
+          {item['text']}
+         </div>
         </div>
       )
     });
     return result;
-
-  }
-
-
+  };
 
   render(){
-      return(
-          <div className="w-80 mx-10 sort-render">
-              <div className='col-sm-4 form-inline'  id="sort-grid">
-                  <div class="form-group">
-                      <label for="list-sorting" className='col-form-label'>Ansichtsoptionen</label>
-                      <select  id="list-sorting" value={this.state.sortField} onChange={this.handleSortChange}>
-                          <option selected disabled value={'null'} key="val0">Choose ...</option>
-                          <option value={'val1'} key="val1">Am besten bewertet</option>
-                          <option value={'val2'} key="val2">Neueste zuerst</option>
-                          <option value={'val3'} key="val3">Älteste zuerst</option>
+    return(
+      <div className="
+        w-80 
+        mx-10 
+        sort-render">
+          <div className='
+             col-sm-4 
+             form-inline' 
+             id="sort-grid">
+               <div class="form-group">
+                <label for="list-sorting" className='col-form-label'>
+                   Ansichtsoptionen
+                </label>
+                   <select 
+                      id="list-sorting"
+                      value={this.state.sortField}
+                      onChange={this.handleSortChange}>
+                       <option
+                         selected disabled 
+                         value={'null'} 
+                         key="val0">
+                           Choose ...
+                        </option>
+
+                         <option 
+                           value={'val1'}
+                           key="val1">
+                              Am besten bewertet
+                          </option>
+
+                          <option
+                            value={'val2'}
+                            key="val2">
+                              Neueste zuerst
+                          </option>
+                          <option 
+                            value={'val3'} 
+                            key="val3">
+                              Älteste zuerst
+                          </option>
                       </select>  
                   </div>
               </div>
@@ -72,7 +106,7 @@ class SortResults extends React.Component {
               {this.createResultToRender()}
           </div>            
       );
-  }
+  };
    
-}
+};
 export default SortResults;
