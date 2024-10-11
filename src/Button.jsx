@@ -17,21 +17,14 @@ function BtnScrollUp() {
 		    onClick={handlerScrollUp}>
 			
 <button className="
-  mt-2.5 
-	mb-2.5
-	w-80
-	rounded 
-	border-solid
-	border-2 
-	border-gray-500 
-	pt-1">
+">
 
 <p className="font-bold">
   BESTELLUNG
   <br/>
 
 <FaArrowUpLong 
-	className="pl-1" /> 
+	className="w-full" /> 
 		WEIGHTBERRY
 </p>
 <br/>

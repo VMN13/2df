@@ -1,24 +1,28 @@
 import React from "react";
-import Maybrit from "./zh.png";
-import Liner from "./ava-1.png"
-import Hero from "./xhero-3.png.pagespeed.ic.MTlRZ2jwjp.jpg";
-import Herotwo from "./hero-4.jpg";
-import Stephan from "./doctor.png";
-import Drjung from "./xava-2.webp.pagespeed.ic._jaCmX9hbf.png"
-import Herothree from "./hero-6.jpg";
-import Berry from "./Berry.png";
+import Maybrit from "./Photo/zh.png";
+import Liner from "./Photo/ava-1.png"
+import Hero from "./Photo/xhero-3.png.pagespeed.ic.MTlRZ2jwjp.jpg";
+import Herotwo from "./Photo/hero-4.jpg";
+import Stephan from "./Photo/doctor.png";
+import Drjung from "./Photo/xava-2.webp.pagespeed.ic._jaCmX9hbf.png"
+import Herothree from "./Photo/hero-6.jpg";
+import Berry from "./Photo/Berry.png";
 
 export default function Otzuvy() {
  return (
   <div className="">
     <div className="
       indent-8 
-      mx-10">
+      mx-10
+      text-center
+      ">
   <span className="
       font-bold
-      text-black-100">
+      text-black-100
+      my-3.5 mx-3.5">
         Illner:
   </span> 
+  <div className=""></div>
       Hape, na endlich! Lange nicht mehr gesehen! 
       Du hast dich buchstäblich verausgabt, du bist halb geworden!
       Heute werden wir dir die unbequemsten und heikelsten Fragen 
@@ -35,28 +39,39 @@ export default function Otzuvy() {
   flex-nowrap
   content-center
   justify-evenly 
-  items-center">
+  items-center
+ my-3.5
+  ">
 
-  <img className="rounded-full"
+  <img className="rounded-full
+  
+  "
        src={Maybrit}
        alt="Zh">
   </img>
-
-  <p className="">
-    Maybrit
-  </p>
 </div>
 
 <div className="">
   <div className="
     indent-8
-    mx-10">
-  <span className="
-    font-bold 
-    text-black-100">
-      Hallo, Maybrit!
-  </span> 
+    mx-10
+    my-3.5
+    ">
+ 
 
+  <div className="indent-8 
+  mx-10
+  my-3.5
+  
+  ">
+    <span className="
+    font-bold 
+    text-black-100
+    
+    ">
+      Hallo, Maybrit!
+      <pre/>
+  </span>   
    Ja, ich habe wirklich die Luft rausgelassen! 
    Und ich bin bereit, alle Fragen zu beantworten. 
    Nach der Verwandlung ist dies meine erste Veröffentlichung, 
@@ -76,11 +91,14 @@ export default function Otzuvy() {
    ich konnte meine Schnürsenkel nicht zubinden,
    ich schwitzte stark, 
    ich trug schreckliche, unmodische Kleidung.
+   </div>
 </div>
 
 <div className="
   indent-8 
-  mx-10">
+  mx-10
+  my-3.5
+  ">
     Als Ehrenmann möchte ich so vielen Menschen, 
     die unter dieser hässlichen Krankheit leiden, helfen, 
     ein für alle Mal abzunehmen! Das Fett loszuwerden, 
@@ -98,7 +116,9 @@ export default function Otzuvy() {
   items-center">
 
 <img className="
-  flex rounded-full" 
+  flex rounded-full
+  my-3.5
+  " 
   src={Liner}>
 </img>
 </div>
@@ -110,7 +130,9 @@ export default function Otzuvy() {
  <hr/>
 <span className="
   font-bold 
-  text-black-100">
+  text-black-100
+  
+  ">
     Illner:
 </span> Wie schön, dass du das tun willst, du bist sehr großzügig, Hape!
   Also, fangen wir an. Nichts für ungut,
@@ -128,28 +150,35 @@ export default function Otzuvy() {
   flex-nowrap
   content-center 
   justify-evenly 
-  items-center">
+  items-center
+  my-3.5
+  ">
 
-<img className="rounded-full"
+<img className="rounded-full
+my-3.5"
      src={Maybrit}>
 </img>
 <hr/>
 </div>
-
+<hr/>
 <div className="w-96">
-  <img className=""
+  <img className="my-3.5 mx-10 h-[170px]"
        src={Hero}>
   </img>
 </div>
-
+<hr/>
 <div className="
   indent-8
-  mx-10">
+  mx-10
+  text-center
+  ">
 <span className="
   font-bold 
-  text-black-100">
+  text-black-100
+
+  ">
     Hape Kerkeling
-</span>
+</span>  <pre/>
   Also, ob ich krank aussehe oder nicht, ist eine subjektive Sache.
   Nein, ich sterbe nicht und ich bin nicht krank. 
   Das Übergewicht ist weg und ich bin sehr glücklich, 
@@ -164,7 +193,9 @@ export default function Otzuvy() {
   flex-nowrap content-center
   justify-evenly 
   items-center">
-  <img className="rounded-full"
+  <img className="rounded-full
+  my-3.5
+  "
        src={Liner}>
   </img>
 </div>
@@ -175,7 +206,9 @@ export default function Otzuvy() {
     text-black-100">
       Illner:
    </span> 
-     Von welcher Diagnose sprechen Sie, Hape?
+   <div className="">
+       Von welcher Diagnose sprechen Sie, Hape?
+       </div>
 </div>
 
 <div className="
@@ -186,7 +219,9 @@ export default function Otzuvy() {
   justify-evenly
   items-center">
 <img className="
-  rounded-full" 
+  rounded-full
+  my-3.5
+  " 
   src={Maybrit}>
 </img>
 </div>
@@ -196,9 +231,13 @@ export default function Otzuvy() {
   mx-10">
 <span className="
   font-bold
-  text-black-100">
+  text-black-100
+  indent-2
+  tracking-wide
+  ">
     Hape Kerkeling:
- </span>
+ </span> 
+ <div className="mx-10">
    Ich habe so viel gegessen,
    dass ich Diabetes und andere Magenprobleme bekam.
    Die zweite Art von Diabetes.
@@ -219,6 +258,7 @@ export default function Otzuvy() {
    Und all diese Qualen für einen zusätzlichen Teller Pasta.
    Natürlich habe ich versucht, etwas zu tun, ich ging zur Massage,
    ich versuchte zu fasten, aber es war alles so sinnlos!
+   </div>
 </div>
 
 <div className="
@@ -228,7 +268,9 @@ export default function Otzuvy() {
   content-center 
   justify-evenly 
   items-center">
-<img className="rounded-full"
+<img className="rounded-full
+my-3.5
+"
   src={Liner}>
 </img>
 </div>
@@ -250,7 +292,9 @@ export default function Otzuvy() {
   justify-evenly
   items-center">
 
-  <img className="rounded-full" 
+  <img className="rounded-full
+  my-3.5
+  " 
        src={Maybrit}>
   </img>
 </div>
@@ -262,7 +306,7 @@ export default function Otzuvy() {
   <span className="
     font-bold
     text-black-100">
-      Hape Kerkeling:
+      Hape Kerkeling:<br/>
    </span>
 
     Nachdem ich alle Torturen des Ernährungsberaters
@@ -282,32 +326,45 @@ export default function Otzuvy() {
   flex-nowrap
   content-center
   justify-evenly
-  items-center">
-<img className="rounded-full"
+  items-center
+  mx-10
+  ">
+<img className="rounded-full
+my-3.5
+
+"
   src={Liner}>
 </img>
 </div>
 
 <div className="w-96">
-  "GEWICHTSZUNAHME - DIÄT, SPORT - RÜCKFALL - ERNEUTE GEWICHTSZUNAHME".
+  <div className="mx-10">
+  "GEWICHTSZUNAHME - DIÄT, SPORT - RÜCKFALL - ERNEUTE GEWICHTSZUNAHME".</div>
+  <hr/>
 <div className="
   flex 
   flex-col 
   flex-nowrap
   content-center 
   justify-evenly 
-  items-center">
-<img className=""
+  items-center
+  
+  ">
+    <hr/>
+<img className="my-3.5
+mx-10 h-[200px]
+"
   src={Herotwo}>
 </img>
 </div>
-
+<div className="mx-10">
   Nein, Sport und Diäten haben mir nicht geholfen. 
   Wie es sicherlich Millionen von Deutschen ergangen ist,
   haben sie nicht geholfen, 
   sie helfen nicht und sie werden nie endgültig helfen!
   Früher oder später wird es immer einen Rückfall geben, egal was man tut. 
   In ein oder zwei Jahren...
+</div>
 </div>
 
 <div className="
@@ -329,7 +386,9 @@ export default function Otzuvy() {
   content-center
   justify-evenly
   items-center">
-<img className="rounded-full" 
+<img className="rounded-full
+my-3.5 
+" 
      src={Maybrit}>
 </img>
 </div>
@@ -390,14 +449,18 @@ export default function Otzuvy() {
   content-center 
   justify-evenly
   items-center">
-    <img className="rounded-full"
+    <img className="rounded-full
+   my-3.5
+    "
         src={Maybrit}>
     </img>
 </div>
 
 <div className="
   indent-8 
-  mx-10">
+  mx-10
+  
+  ">
     <span className="
       font-bold 
       text-black-100">
@@ -424,7 +487,9 @@ export default function Otzuvy() {
   content-center
   justify-evenly 
   items-center">
-    <img className="rounded-full"
+    <img className="rounded-full
+    my-3.5
+    "
          src={Liner}>
     </img>
 </div>
@@ -449,7 +514,11 @@ export default function Otzuvy() {
     <img className="
       w-24 
       h-24 
-      rounded-full" 
+      rounded-full
+      my-3.5
+      h-[120px]
+      w-[120px]
+      " 
       src={Stephan}>
     </img>
 </div>
@@ -474,7 +543,9 @@ export default function Otzuvy() {
   content-center
   justify-evenly 
   items-center">
-  <img className="rounded-full"
+  <img className="rounded-full
+ my-3.5 
+  "
    src={Maybrit}>
   </img>
   </div>
@@ -502,7 +573,9 @@ export default function Otzuvy() {
   content-center 
   justify-evenly  
   items-center">
-    <img className="rounded-full"
+    <img className="rounded-full
+my-3.5 h-[100px]
+    "
          src={Drjung}>
   </img>
 </div>
@@ -525,20 +598,24 @@ export default function Otzuvy() {
   content-center 
   justify-evenly  
   items-center">
-  <img className="rounded-full"
+  <img className="rounded-full
+ my-3.5 
+  "
        src={Maybrit}>
   </img>
 </div>
-
+<hr/>
 <div className="w-96">
-<img className="" 
+<img className="my-3.5 mx-10 w-[300px]" 
      src={Herothree}>
 </img>
 </div>
-
+<hr/>
 <div className="
   indent-8 
-  mx-10">
+  mx-10
+  my-3.5
+  ">
 <span className="
   font-bold 
   text-black-100">
@@ -569,7 +646,9 @@ export default function Otzuvy() {
   content-center 
   justify-evenly 
   items-center">
-<img className=""
+<img className="my-3.5
+h-[100px]
+"
      src={Drjung}>
 </img>
 </div>
@@ -584,7 +663,7 @@ export default function Otzuvy() {
   justify-evenly
   items-center">
 <div className="">
-<img className="" 
+<img className="my-3.5" 
      src={Berry}>
 </img>
 </div>

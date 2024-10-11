@@ -1,17 +1,14 @@
-import './App.css';
+import './css/App.css';
 import React, {useState} from "react";
 import Example from './Header';
 import Main from './Main';
 import Otzuvy from './Otzuvy';
 import Form from './Form';
 import FormNum from './Formnum';
-import Comment from './Comment';
 import SortResults from './Comment';
 import Valid from "./Valid.jsx";
-import Button from "./Button.jsx";
 import BtnScrollUp from './Button.jsx';
 import Footer from './Footer';
-import Theme from "./theme";
 import { MdOutlineNightsStay } from "react-icons/md";
 
 function App() {
@@ -26,11 +23,10 @@ return (
     <MdOutlineNightsStay 
       className="
         text-yellow-500
-        mt-10 
-        mr-12 
+        my-[23px] 
+        ml-[180px] 
         absolute"
           onClick={toogleTheme} />
-
       <Example />
       <Main />
       <Otzuvy />

@@ -26,11 +26,15 @@ export default function Form({seconds}) {
    }, [countdown])
 
   return (
-    <div className="mt-10">
-    <h1 className=""
+    <div className="mt-10
+    border-solid
+    border-red-800
+    ">
+    <h1 className=" border-solid
+    border-red-800"
      >AKTION LÄUFT AB IN
     </h1>
-    <h2 className="
+    <h2 className="border-dashed
       text-red-800 
       text-2xl">{formatTime(countdown)}</h2>
     </div>

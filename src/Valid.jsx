@@ -1,6 +1,6 @@
 import React from "react";
 import inputHOCvalidator from "./components/inputHOCvalidator";
-import "./Valid.css";
+import "./css/Valid.css";
 import Input from "./components/index.js";
 let InputHOC = inputHOCvalidator(Input);
 let error = [];
@@ -45,7 +45,7 @@ render() {
        placeholder="Ihr Name"
       />
 
-  <InputHOC 
+  <InputHOC
     labelName=""
     placeholder={this.state.login}
     action={this.changeState}

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/source-sans-pro": "^5.1.0",
     "@headlessui/react": "^2.1.9",
     "@heroicons/react": "^2.1.5",
     "@testing-library/jest-dom": "^5.17.0",

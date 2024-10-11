@@ -1,27 +1,27 @@
 import React from "react";
-import logoFooter from "./logo_footer1.svg";
-import logoFootertwo from "./logo_footer2.svg";
-import logoFooterthree from "./logo_footer3.svg";
-import logoFooterfour from "./logo_footer4.svg";
-import logoFooterfive from "./logo_footer5.svg";
-import FooterSix from "./logo_footer6.svg";
-import FooterSeven from "./logo_footer7.svg";
-import FooterEight from "./logo_footer8.svg";
-import FooterNine from "./logo_footer9.svg";
-import FooterTen from "./logo_footer10.svg";
-import FooterEleven from "./logo_footer11.svg";
-import FooterTwelve from "./logo_footer12.svg";
+import logoFooter from "./Photo/logo_footer1.svg";
+import logoFootertwo from "./Photo/logo_footer2.svg";
+import logoFooterthree from "./Photo/logo_footer3.svg";
+import logoFooterfour from "./Photo/logo_footer4.svg";
+import logoFooterfive from "./Photo/logo_footer5.svg";
+import FooterSix from "./Photo/logo_footer6.svg";
+import FooterSeven from "./Photo/logo_footer7.svg";
+import FooterEight from "./Photo/logo_footer8.svg";
+import FooterNine from "./Photo/logo_footer9.svg";
+import FooterTen from "./Photo/logo_footer10.svg";
+import FooterEleven from "./Photo/logo_footer11.svg";
+import FooterTwelve from "./Photo/logo_footer12.svg";
 
 function Footer() {
 return (
-  <div className="
+  <div className="text-left
     indent-8 
     flex 
     flex-nowrap">
-  <footer class="
+  <footer className="
    bg-white 
    dark:bg-gray-300">
-  <div class="
+  <div className="
     mx-auto
     w-full
     max-w-screen-xl">
@@ -30,7 +30,10 @@ return (
     grid-cols-5
     grid-rows-1
     gap-4 
-    gray-300">
+    gray-300
+    my-5
+    mx-10
+    ">
   <div>
   <img src={logoFooter}>
   </img>
@@ -57,7 +60,7 @@ return (
 </div>
 </div>
 
-<div class="
+<div className="
   grid 
   grid-cols-2
   gap-8
@@ -66,7 +69,7 @@ return (
   lg:py-8 
   md:grid-cols-4">
 <div>
-<h2 class="
+<h2 className="
   mb-6
   text-sm 
   font-semibold
@@ -76,51 +79,51 @@ return (
     Mehr ZDF
  </h2>
 
-<ul class="
+<ul className="
   text-gray-500
   dark:text-gray-400 
   font-medium">
-   <li class="mb-4">
+   <li className="mb-4">
      <a href="#" 
-        class=" 
+        className="
            hover:underline">
               ZDFapps
      </a>
     </li>
 
-<li class="mb-4">
+<li className="mb-4">
   <a href="#"
-  class="
+  className="
     hover:underline">
       Smart TV
    </a>
 </li>
 
-<li class="mb-4">
+<li className="mb-4">
  <a href="#" 
- class="
+ className="
    hover:underline">
    ZDFtext
  </a>
 </li>
 
-<li class="mb-4">
+<li className="mb-4">
   <a href="#"
-     class="hover:underline">
+     className="hover:underline">
        Livestreams
   </a>
 </li>
 
-<li class="mb-4">
+<li className="mb-4">
   <a href="#" 
-     class="hover:underline">
+     className="hover:underline">
        Sendungen A-Z
   </a>
 </li>
 
-<li class="mb-4">
+<li className="mb-4">
   <a href="#"
-    class="hover:underline">
+    className="hover:underline">
      TV-Programm
   </a>
 </li>
@@ -128,7 +131,7 @@ return (
 </div>
 
 <div>
-  <h2 class="
+  <h2 className="
     mb-6 
     text-sm
     font-semibold
@@ -138,48 +141,48 @@ return (
       ZDF woanders
   </h2>
 
-<ul class="
+<ul className="
  text-gray-500
  dark:text-gray-400 
  font-medium">
-  <li class="mb-4">
+  <li className="mb-4">
    <a href="#"
-      class="hover:underline">
+      className="hover:underline">
         ZDF YouTube
     </a>
   </li>
 
-   <li class="mb-4">
+   <li className="mb-4">
      <a href="#"
-       class="hover:underline">
+       className="hover:underline">
          ZDF Facebook
      </a>
    </li>
 
-  <li class="mb-4">
+  <li className="mb-4">
     <a href="#"
-       class="hover:underline">
+       className="hover:underline">
          ZDF Twitter
     </a>
   </li>
 
-  <li class="mb-4">
+  <li className="mb-4">
     <a href="#" 
-       class="hover:underline">
+       className="hover:underline">
         ZDF Instagram
      </a>
    </li>
 
-  <li class="mb-4">
+  <li className="mb-4">
     <a href="#"
-       class="hover:underline">
+       className="hover:underline">
         ZDF Tiktok
     </a>
   </li>
 
-  <li class="mb-4">
+  <li className="mb-4">
     <a href="#" 
-      class="hover:underline">
+      className="hover:underline">
         ZDF Mastodon
     </a>
   </li>
@@ -187,7 +190,7 @@ return (
 </div>
 
 <div>
-  <h2 class="
+  <h2 className="
     mb-6 
     text-sm 
     font-semibold
@@ -197,48 +200,48 @@ return (
       Service
   </h2>
 
-  <ul class="
+  <ul className="
     text-gray-500 
     dark:text-gray-400
     font-medium">
-     <li class="mb-4">
+     <li className="mb-4">
        <a href="#" 
-          class="hover:underline">
+          className="hover:underline">
            Tickets
        </a>
      </li>
 
-     <li class="mb-4">
+     <li className="mb-4">
       <a href="#"
-        class="hover:underline">
+        className="hover:underline">
           Zuschauerservice
        </a>
      </li>
 
-    <li class="mb-4">
+    <li className="mb-4">
      <a href="#"
-        class="hover:underline">
+        className="hover:underline">
           ZDFmitreden&amp;
       </a>
     </li>
 
-    <li class="mb-4">
+    <li className="mb-4">
      <a href="#" 
-        class="hover:underline">
+        className="hover:underline">
           Kontakt zum ZDF 
       </a>
     </li>
 
-    <li class="mb-4">
+    <li className="mb-4">
       <a href="#"
-         class="hover:underline">
+         className="hover:underline">
            Sitemap
       </a>
     </li>
 
-    <li class="mb-4">
+    <li className="mb-4">
      <a href="#"
-        class="hover:underline">
+        className="hover:underline">
           Hilfe
        </a>
     </li>
@@ -246,7 +249,7 @@ return (
 </div>
 
 <div>
-  <h2 class="
+  <h2 className="
      mb-6 
      text-sm 
      font-semibold 
@@ -256,41 +259,44 @@ return (
        Das ZDF
   </h2>
 
-  <ul class="
+  <ul className="
     text-gray-500 
     dark:text-gray-400
     font-medium">
-      <li class="mb-4">
+      <li className="mb-4">
        <a href="#" 
-          class="hover:underline">
-            ZDF Unternehmen
+          className="hover:underline
+          mr-5
+          
+          ">
+             Unternehmen
        </a>
       </li>
 
-      <li class="mb-4">
+      <li className="mb-4">
         <a href="#" 
-           class="hover:underline">
+           className="hover:underline">
              Karriere
         </a>
       </li>
 
-      <li class="mb-4">
+      <li className="mb-4">
        <a href="#" 
-          class="hover:underline">
+          className="hover:underline">
             Presseportal
        </a>
       </li>
 
-      <li class="mb-4">
+      <li className="mb-4">
         <a href="#" 
-           class="hover:underline">
+           className="hover:underline">
              Werbefernsehen
         </a>
       </li>
 
-      <li class="mb-4">
+      <li className="mb-4">
         <a href="#" 
-           class="hover:underline">
+           className="hover:underline">
               Mainzelmännchen
         </a>
       </li>
@@ -302,13 +308,11 @@ return (
     grid 
     grid-cols-5
     grid-rows-1
-    gap-4">
-  <div>
-    <p className="
-      text-white">
-        Partner
-    </p>
-  </div>
+    gap-4
+    my-3.5
+    ml-24
+    ">
+  
 
   <div>
     <img src={FooterSix}>
@@ -324,13 +328,18 @@ return (
     <img src={FooterEight}>
     </img>
   </div>
+  
+  
 </div>
 
  <div className="
     grid
     grid-cols-5 
     grid-rows-1
-    gap-4">
+    gap-4
+    my-3.5
+    ml-12
+    ">
   <div>
      <img src={FooterNine}>
      </img>
@@ -358,28 +367,11 @@ return (
     grid-rows-1 
     gap-4 
     bg-gray-300">
-  <div>
-    <p className="text-white">
-      Nutzungsbedingungen
-    </p>
-  </div>
 
- <div>
-   <p className="text-white">
-      Datenschutz
-   </p>
-  </div>
+      <div className="flex justify-center
 
-  <div>
-    <p className="text-white">
-      Datenschutzeinstellungen
-    </p>
-  </div>
-
- <div>
-    <p className="text-white">
-      Impressum</p>
-  </div>
+      ">
+ </div>
 </div>
 </div>
 </footer>

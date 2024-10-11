@@ -3,11 +3,8 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FaUserCircle } from "react-icons/fa";
 import { GrSearch } from "react-icons/gr";
-import LogoHeader from "./logo_header.svg";
-import { Dayjs } from "dayjs";
+import LogoHeader from "./Photo/logo_header.svg";
 import MyComponent from "./Daysjs";
-import { MdOutlineNightsStay } from "react-icons/md";
-import Theme from './theme';
 
 const navigation = [
   {name: 'Rubriken', href: '#', current: true},
@@ -49,6 +46,8 @@ export default function Example() {
   items-center 
   sm:hidden">
 
+    
+
   <DisclosureButton
      className="
        group 
@@ -59,7 +58,7 @@ export default function Example() {
        rounded-md 
        p-2 
        text-gray-400
-       hover:bg-gray-700
+       hover:bg-red-700
        hover:text-white 
        focus:outline-none 
        focus:ring-2 
@@ -153,7 +152,7 @@ export default function Example() {
 </div>
 </div>
 
-  <Theme/>
+
    <DisclosurePanel
      className="sm:hidden">
 <div className="space-y-1 px-2 pb-3 pt-2">
